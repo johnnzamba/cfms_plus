@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 18:52:28.094820",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event_details_section",
+  "event_program_name",
+  "event_branch",
+  "column_break_afdr",
+  "event_date",
+  "attendance_marked",
+  "mark_attendance_here_section",
+  "filter_member",
+  "attendance",
+  "mark_all"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_details_section",
+   "fieldtype": "Section Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "event_program_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Event/Program Name",
+   "options": "Church Events and Programs",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "description": "Event Was Held in?",
+   "fieldname": "event_branch",
+   "fieldtype": "Link",
+   "label": "Event/Program is being held in Branch?",
+   "options": "Church Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_afdr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "description": "ONLY Specific Event/Program Dates APPLY.",
+   "fieldname": "event_date",
+   "fieldtype": "Select",
+   "label": "Mark Attendance for Date?",
+   "reqd": 1
+  },
+  {
+   "description": "NOTE: Church Members might be filtered based on BRANCH.",
+   "fieldname": "mark_attendance_here_section",
+   "fieldtype": "Section Break",
+   "label": "Mark Attendance Here"
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Table",
+   "label": "REMEMBER TO CHECK ATTENDANCE FOR INDIVIDUAL CHURCH MEMBERS",
+   "options": "Event Attendance Tool Reference"
+  },
+  {
+   "bold": 1,
+   "fieldname": "mark_all",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Mark for ALL"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "If TRUE indicates Attendance has been Recorded.",
+   "fieldname": "attendance_marked",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Attendance Recorded",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "description": "Use this FOR SPECIFIC Church Member.",
+   "fieldname": "filter_member",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Filter Individual Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-15 12:14:53.572615",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Event or Program Attendance TOOL",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

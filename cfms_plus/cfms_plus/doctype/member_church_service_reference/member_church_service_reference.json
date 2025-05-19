@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 14:01:37.640146",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "attended_on",
+  "attended"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service Type",
+   "options": "Church Service Type"
+  },
+  {
+   "fieldname": "attended_on",
+   "fieldtype": "Date",
+   "label": "Attended On"
+  },
+  {
+   "default": "0",
+   "fieldname": "attended",
+   "fieldtype": "Check",
+   "label": "Attended Church?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-12 14:03:29.994752",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Member Church Service Reference",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

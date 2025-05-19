@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 20:01:07.672514",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "collection_type",
+  "church_member",
+  "amount_received"
+ ],
+ "fields": [
+  {
+   "default": "Tithes",
+   "fieldname": "collection_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Collection Type",
+   "options": "Collection Type"
+  },
+  {
+   "fieldname": "church_member",
+   "fieldtype": "Link",
+   "label": "Collection for Church Member?",
+   "options": "Church Members"
+  },
+  {
+   "fieldname": "amount_received",
+   "fieldtype": "Currency",
+   "label": "Amount Received"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-19 09:49:26.341678",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Specific Collection Reference",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CAT-.###.-.YYYY./.MM./.DD.",
+ "creation": "2025-05-12 13:40:26.772046",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ym2b",
+  "amended_from",
+  "church_branch",
+  "column_break_plej",
+  "service_date",
+  "service_type",
+  "ge_section_tab",
+  "general_attendance_section_section",
+  "women_attendance",
+  "men_attendance",
+  "children_attendance",
+  "column_break_dxss",
+  "render_counts",
+  "specific_section_tab",
+  "detailed_attendance_section_section",
+  "members_table",
+  "mark_all"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ym2b",
+   "fieldtype": "Section Break",
+   "label": "IMPORTANT INFO"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Church Services Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "description": "ATTENDANCES shall be marked on Individual CHURCH basis.",
+   "fieldname": "church_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specify Church Branch",
+   "options": "Church Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_plej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Specify the Date",
+   "reqd": 1
+  },
+  {
+   "description": "NOTE: Service Type will FILTER based on DATE earlier selected.",
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specify Church Service Type",
+   "options": "Church Service Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ge_section_tab",
+   "fieldtype": "Tab Break",
+   "label": "GE Section"
+  },
+  {
+   "description": "Summary Counts (no detailed breakdown)\n",
+   "fieldname": "general_attendance_section_section",
+   "fieldtype": "Section Break",
+   "label": "GENERAL ATTENDANCE SECTION"
+  },
+  {
+   "fieldname": "women_attendance",
+   "fieldtype": "Int",
+   "label": "Specify how many WOMEN attended",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "men_attendance",
+   "fieldtype": "Int",
+   "label": "Specify how many MEN attended",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "children_attendance",
+   "fieldtype": "Int",
+   "label": "Specify how many CHILDREN attended"
+  },
+  {
+   "fieldname": "specific_section_tab",
+   "fieldtype": "Tab Break",
+   "label": "SPECIFIC Section"
+  },
+  {
+   "fieldname": "detailed_attendance_section_section",
+   "fieldtype": "Section Break",
+   "label": "DETAILED ATTENDANCE SECTION"
+  },
+  {
+   "description": "NOTE: Members might differ based on BRANCH selected.",
+   "fieldname": "members_table",
+   "fieldtype": "Table",
+   "options": "Specific Member Attendance"
+  },
+  {
+   "fieldname": "column_break_dxss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "render_counts",
+   "fieldtype": "HTML",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "description": "Click to MARK ALL members Present, Otherwise CHECK for each MANUALLY.",
+   "fieldname": "mark_all",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Mark ALL Present"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-15 19:28:15.664571",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Church Services Attendance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

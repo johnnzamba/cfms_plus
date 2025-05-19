@@ -1,0 +1,209 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-03-29 19:14:57.756271",
+  "name": "Submitted",
+  "style": "",
+  "workflow_state_name": "Submitted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-03-29 21:07:32.398024",
+  "name": "Journals Created",
+  "style": "",
+  "workflow_state_name": "Journals Created"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-03-29 17:21:29.339807",
+  "name": "Pending Finance",
+  "style": "",
+  "workflow_state_name": "Pending Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-03-29 17:21:21.897095",
+  "name": "Pending Manager",
+  "style": "",
+  "workflow_state_name": "Pending Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-18 19:38:17.692748",
+  "name": "Place on Waiting List",
+  "style": "",
+  "workflow_state_name": "Place on Waiting List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-13 09:17:04.655021",
+  "name": "Admission Revoked",
+  "style": "Danger",
+  "workflow_state_name": "Admission Revoked"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-13 09:14:50.720251",
+  "name": "Pending Student",
+  "style": "",
+  "workflow_state_name": "Pending Student"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-13 09:15:43.224631",
+  "name": "Approved by Accounts",
+  "style": "Success",
+  "workflow_state_name": "Approved by Accounts"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-03-13 09:15:14.261437",
+  "name": "Pending Approval By Accounts",
+  "style": "Info",
+  "workflow_state_name": "Pending Approval By Accounts"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-18 21:21:53.358829",
+  "name": "Pending Acceptance by Tenant",
+  "style": "",
+  "workflow_state_name": "Pending Acceptance by Tenant"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-20 08:49:23.508890",
+  "name": "Renewed",
+  "style": "Success",
+  "workflow_state_name": "Renewed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-02-08 14:02:12.008370",
+  "name": "Expired",
+  "style": "Danger",
+  "workflow_state_name": "Expired"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2024-03-29 16:28:10.783221",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-01-24 02:57:05.855911",
+  "name": "On Waiting List",
+  "style": "Primary",
+  "workflow_state_name": "On Waiting List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2024-03-29 16:28:10.786740",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-18 19:34:36.305013",
+  "name": "Cancelled",
+  "style": "",
+  "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-19 06:49:34.067809",
+  "name": "Submitted for Review",
+  "style": "Primary",
+  "workflow_state_name": "Submitted for Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2024-03-29 16:28:10.785142",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-18 19:26:45.041566",
+  "name": "Submitted for Approval",
+  "style": "",
+  "workflow_state_name": "Submitted for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-19 06:49:55.319469",
+  "name": "Draft",
+  "style": "Warning",
+  "workflow_state_name": "Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-13 19:39:29.730393",
+  "name": "Rejected by Accounts",
+  "style": "Danger",
+  "workflow_state_name": "Rejected by Accounts"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-13 19:40:10.755101",
+  "name": "Approved by Senior Pastor",
+  "style": "Success",
+  "workflow_state_name": "Approved by Senior Pastor"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-05-13 19:40:50.356223",
+  "name": "Rejected by Senior Pastor",
+  "style": "Danger",
+  "workflow_state_name": "Rejected by Senior Pastor"
+ }
+]

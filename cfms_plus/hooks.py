@@ -7,9 +7,83 @@ app_license = "mit"
 
 # Apps
 # ------------------
+# Hook on document methods and events
 
+doc_events = {
+	"Church Branch": {
+		"after_insert": "cfms_plus.cfms_plus.doctype.church_branch.church_branch.create_coa",
+	},
+    "Church Members": {
+		"after_insert": "cfms_plus.cfms_plus.doctype.church_members.church_members.generate_member_id",
+	},
+    "Church Events and Programs": {
+        "after_insert": [
+            "cfms_plus.cfms_plus.doctype.church_events_and_programs.church_events_and_programs.send_informative_notice",
+            "cfms_plus.cfms_plus.doctype.church_events_and_programs.church_events_and_programs.update_event_status"
+    ],
+        "on_update":    "cfms_plus.cfms_plus.doctype.church_events_and_programs.church_events_and_programs.handle_workflow_update",
+        "on_submit": "cfms_plus.cfms_plus.doctype.church_events_and_programs.church_events_and_programs.handle_final_approval"
+    },
+    "Questionnaire for Events and Programs": {
+		"after_insert": "cfms_plus.cfms_plus.doctype.questionnaire_for_events_and_programs.questionnaire_for_events_and_programs.save_attendance",
+	},
+    "Church Services Attendance": {
+		"on_submit": "cfms_plus.cfms_plus.doctype.church_services_attendance.church_services_attendance.update_member_attendance",
+	},
+    "Church Collections": {
+        "after_insert": "cfms_plus.cfms_plus.doctype.church_collections.church_collections.update_member",
+        "on_submit": "cfms_plus.cfms_plus.doctype.church_collections.church_collections.create_journal_entry"
+    }
+    # "Event or Program Attendance TOOL": {
+	# 	"after_insert": "cfms_plus.cfms_plus.doctype.event_or_program_attendance_tool.event_or_program_attendance_tool.mark_event_attendance",
+	# }
+}
+
+scheduler_events = {
+    "daily": [
+        "cfms_plus.cfms_plus.doctype.church_events_and_programs.church_events_and_programs.update_event_status"
+    ]
+}
 # required_apps = []
 
+fixtures = [
+    {
+        "doctype": "DocType",
+        "filters": [
+            [
+                "name", "in", [
+                    "User"
+                ]
+            ]
+        ]
+    },
+    {
+        "doctype": "Email Template",
+        "filters": [["name", "in", ["Church Members Giving Acknowledgement"]]]
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [["name", "in", ["Register Member to Group/Ministry", "Register in Group/Ministry Doc", "Events/Programs Calendar"]]]
+    },
+    {
+        "doctype": "Workflow",
+        "filters": [["name", "in", ["Event/Program Workflow"]]]
+    },
+    {
+        "doctype": "Workflow State"
+    },
+    {
+        "doctype": "Workflow Action Master"
+    },
+    {
+        "doctype": "Workspace",
+        "filters": [["name", "in", ["CFMS +"]]]
+    },
+    {
+        "doctype": "Role",
+        "filters": [["name", "in", ["Pastor"]]]
+    }
+]
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
@@ -21,6 +95,11 @@ app_license = "mit"
 # 	}
 # ]
 
+calendar_js = {
+    "Church Events and Programs": "public/js/church_events_and_programs.js"
+}
+
+# register the calendar class
 # Includes in <head>
 # ------------------
 
@@ -135,15 +214,6 @@ app_license = "mit"
 
 # Document Events
 # ---------------
-# Hook on document methods and events
-
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
 
 # Scheduled Tasks
 # ---------------

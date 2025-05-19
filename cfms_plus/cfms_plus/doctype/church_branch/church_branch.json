@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:branch_name",
+ "creation": "2025-05-12 11:41:50.492025",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_masters_section",
+  "branch_name",
+  "branch_code",
+  "branch_county",
+  "parent_church_branch",
+  "is_group",
+  "branch_address",
+  "branch_contact_details_section",
+  "branch_main_mobile",
+  "branch_other_mobile",
+  "column_break_fsbm",
+  "branch_email",
+  "branch_website",
+  "other_administrative_details_section",
+  "branch_admin",
+  "branch_active_from",
+  "branch_accounts_created",
+  "column_break_rubz",
+  "bank_branch",
+  "branch_bank_acc",
+  "branch_other_bank_acc",
+  "lft",
+  "rgt"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_masters_section",
+   "fieldtype": "Section Break",
+   "label": "Branch Masters"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "NOTE: Used for Mapping to General Ledger Accounts\n",
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Code",
+   "reqd": 1
+  },
+  {
+   "description": "NOTE: Applicable for ONLY KENYAN COUNTIES.",
+   "fieldname": "branch_county",
+   "fieldtype": "Select",
+   "label": "Branch is situated in County?",
+   "options": "1. Mombasa\n2. Kwale\n3. Kilifi\n4. Tana River\n5. Lamu\n6. Taita/Taveta\n7. Garissa\n8. Wajir\n9. Mandera\n10. Marsabit\n11. Isiolo\n12. Meru\n13. Tharaka-Nithi\n14. Embu\n15. Kitui\n16. Machakos\n17. Makueni\n18. Nyandarua\n19. Nyeri\n20. Kirinyaga\n21. Murang'a\n22. Kiambu\n23. Turkana\n24. West Pokot\n25. Samburu\n26. Trans Nzoia\n27. Uasin Gishu\n28. Elgeyo/Marakwet\n29. Nandi\n30. Baringo\n31. Laikipia\n32. Nakuru\n33. Narok\n34. Kajiado\n35. Kericho\n36. Bomet\n37. Kakamega\n38. Vihiga\n39. Bungoma\n40. Busia\n41. Siaya\n42. Kisumu\n43. Homa Bay\n44. Migori\n45. Kisii\n46. Nyamira\n47. Nairobi City"
+  },
+  {
+   "fieldname": "branch_address",
+   "fieldtype": "Small Text",
+   "label": "Branch Address"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "NOTE: By virtue of being a GROUP means this BRANCH might contain branches under it.",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is this Branch a Group?"
+  },
+  {
+   "fieldname": "branch_contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Branch Contact Details"
+  },
+  {
+   "fieldname": "branch_main_mobile",
+   "fieldtype": "Phone",
+   "label": "Branch Main Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_other_mobile",
+   "fieldtype": "Phone",
+   "label": "Branch Other Mobile"
+  },
+  {
+   "fieldname": "column_break_fsbm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch_email",
+   "fieldtype": "Data",
+   "label": "Branch Email Address"
+  },
+  {
+   "fieldname": "branch_website",
+   "fieldtype": "Data",
+   "label": "Branch Website",
+   "placeholder": "EXAMPLE: https://www.facebook.com/milimanisdachurch/"
+  },
+  {
+   "fieldname": "other_administrative_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Administrative Details"
+  },
+  {
+   "description": "NOTE: This Persona will be Crucial in receiving IMPORTANT informative notices of this BRANCH.",
+   "fieldname": "branch_admin",
+   "fieldtype": "Link",
+   "label": "Branch Administrator",
+   "options": "User"
+  },
+  {
+   "bold": 1,
+   "fieldname": "branch_active_from",
+   "fieldtype": "Date",
+   "label": "Branch Active From"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "NOTE: IF TRUE = This means IMPORTANT COLLECTION ACCOUNTS have been created.",
+   "fieldname": "branch_accounts_created",
+   "fieldtype": "Check",
+   "label": "Branch Accounts Created in COA?",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rubz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_branch",
+   "fieldtype": "Select",
+   "label": "Specify the Branch's Bank(IF APPLICABLE)",
+   "options": "1. African Banking Corp. Ltd.\n2. Bank of Africa Kenya Ltd.\n3. Bank of India\n4. Bank of Baroda (K) Ltd.\n5. Barclays Bank of Kenya Ltd.\n6. CfC Stanbic Bank Ltd.\n7. Chase Bank (K) Ltd.\n8. Citibank N.A.\n9. Commercial Bank of Africa Ltd.\n10.Consolidated Bank of Kenya Ltd.\n11.Co-operative Bank of Kenya Ltd.\n12.Credit Bank Ltd.\n13.Development Bank (K) Ltd.\n14.Diamond Trust Bank (K) Ltd.\n15.Dubai Bank Ltd.\n16.Ecobank Limited\n17.Equatorial Commercial Bank Ltd.\n18.Equity Bank Ltd.\n19.Family Bank Ltd.\n20.Faulu Bank\n21.Fidelity Commercial Bank Ltd.\n22.Fina Bank Ltd.\n23.First Community Bank Ltd.\n24.Giro Commercial Bank Ltd.\n25.Guardian Bank Ltd.\n26.Gulf African Bank Ltd.\n27.Habib Bank A.G. Zurich\n28.Habib Bank Ltd.\n29.Housing Finance Company of\nKenya Ltd.\n30.Imperial Bank Ltd.\n31.I & M Bank Ltd.\n32.Jamii Bora Bank Ltd.\n33.K-Rep Bank Ltd.\n34.Kenya Commercial Bank Ltd.\n35.Kenya Women Microfinance\nBank\n36.Middle East Bank (K) Ltd.\n37.National Bank of Kenya Ltd.\n38.NIC Bank Ltd.\n39.Oriental Bank Ltd.\n40.Paramount Universal Bank Ltd\n41.Prime Bank Ltd.\n42.Postbank\n43.Standard Chartered Bank (K) Ltd.\n44.Transnational Bank Ltd.\n45.UBA Kenya Bank Ltd.\n46. Victoria Commercial Bank Ltd."
+  },
+  {
+   "fieldname": "branch_bank_acc",
+   "fieldtype": "Data",
+   "label": "Specify Bank Account"
+  },
+  {
+   "fieldname": "branch_other_bank_acc",
+   "fieldtype": "Data",
+   "label": "Other Bank Account(IF APPLICABLE)"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "NOTE: By virtue of being a GROUP means this BRANCH might contain branches under it.",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is this Branch a Group?"
+  },
+  {
+   "description": "Ensure PARENT church is MAPPED(If applicable).",
+   "fieldname": "parent_church_branch",
+   "fieldtype": "Link",
+   "label": "Parent Church Branch",
+   "options": "Church Branch"
+  },
+  {
+   "description": "Ensure PARENT church is MAPPED(If applicable).",
+   "fieldname": "parent_church_branch",
+   "fieldtype": "Link",
+   "label": "Parent Church Branch",
+   "options": "Church Branch"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [
+  {
+   "link_doctype": "Church Members",
+   "link_fieldname": "member_branch"
+  },
+  {
+   "link_doctype": "Account",
+   "link_fieldname": "custom_church_branch"
+  }
+ ],
+ "modified": "2025-05-13 11:32:28.650337",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Church Branch",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_church_branch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

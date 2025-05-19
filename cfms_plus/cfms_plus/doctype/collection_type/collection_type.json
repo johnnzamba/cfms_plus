@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:collection_name",
+ "creation": "2025-05-12 11:32:58.601361",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "collection_type",
+  "collection_name",
+  "collection_code",
+  "branch_specific"
+ ],
+ "fields": [
+  {
+   "fieldname": "collection_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Specify Collection Type",
+   "options": "Trust Funds\nLocal Church Funds",
+   "reqd": 1
+  },
+  {
+   "fieldname": "collection_name",
+   "fieldtype": "Data",
+   "label": "Collection Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "Specify UNIQUE code for Accounting Purposes.",
+   "fieldname": "collection_code",
+   "fieldtype": "Data",
+   "label": "Collection Code"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "If TRUE; will be APPLIED for-each BRANCH.",
+   "fieldname": "branch_specific",
+   "fieldtype": "Check",
+   "label": "Is Branch Specific?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-12 11:44:39.594767",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Collection Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

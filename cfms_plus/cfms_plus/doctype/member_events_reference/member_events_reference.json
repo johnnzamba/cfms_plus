@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 13:27:07.688418",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event",
+  "attended_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Church Event",
+   "options": "Church Events and Programs"
+  },
+  {
+   "fieldname": "attended_on",
+   "fieldtype": "Date",
+   "label": "Attended On"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-15 08:46:49.472185",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Member Events Reference",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 19:50:47.306191",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "church_branch",
+  "collection_date",
+  "column_break_ykjn",
+  "service_type",
+  "general_section_section",
+  "general",
+  "member_specific_section_section",
+  "church_member",
+  "specific"
+ ],
+ "fields": [
+  {
+   "fieldname": "church_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Collection being made for Church Branch?",
+   "options": "Church Branch"
+  },
+  {
+   "fieldname": "collection_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Collection for Date"
+  },
+  {
+   "description": "IF Collection is made for CHURCH SERVICE.",
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "label": "Collection for Church Service Type(If APPLICABLE)",
+   "options": "Church Service Type"
+  },
+  {
+   "description": "This Section is Used for SUMMARY collections",
+   "fieldname": "general_section_section",
+   "fieldtype": "Section Break",
+   "label": "GENERAL SECTION"
+  },
+  {
+   "fieldname": "general",
+   "fieldtype": "Table",
+   "options": "General Collection Reference"
+  },
+  {
+   "description": "NOTE: MEMBERS will be filtered based on BRANCH.",
+   "fieldname": "member_specific_section_section",
+   "fieldtype": "Section Break",
+   "label": "MEMBER SPECIFIC SECTION"
+  },
+  {
+   "fieldname": "specific",
+   "fieldtype": "Table",
+   "options": "Specific Collection Reference"
+  },
+  {
+   "bold": 1,
+   "description": "NOTE: This can be used to record collection for INDIVIDUAL member.",
+   "fieldname": "church_member",
+   "fieldtype": "Data",
+   "label": "Filter by Church Member",
+   "placeholder": "EXAMPLE: Jane Doe"
+  },
+  {
+   "fieldname": "column_break_ykjn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-19 11:04:13.493173",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Collection Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

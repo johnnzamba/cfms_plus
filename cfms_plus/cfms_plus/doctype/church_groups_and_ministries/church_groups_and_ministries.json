@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 12:12:03.314185",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "master_details_tab",
+  "groupministry_info_section",
+  "group_ministry_name",
+  "group_ministry_code",
+  "purpose_mission",
+  "group_ministry_status",
+  "column_break_wfwz",
+  "is_branch_specific",
+  "applicable_branch",
+  "is_group",
+  "under_group_ministry",
+  "has_collection_acc",
+  "collection_acc",
+  "membership_details_tab",
+  "groupministry_membership_section",
+  "member_count",
+  "member_breakdown"
+ ],
+ "fields": [
+  {
+   "fieldname": "groupministry_info_section",
+   "fieldtype": "Section Break",
+   "label": "Group/Ministry Info"
+  },
+  {
+   "fieldname": "group_ministry_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Group/Ministry Name",
+   "placeholder": "EXAMPLE: Youth Ministry",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "NOTE: If TRUE, means this will be tied to a SPECIFIC CHURCH BRANCH.",
+   "fieldname": "is_branch_specific",
+   "fieldtype": "Check",
+   "label": "Is Specific to a Branch"
+  },
+  {
+   "depends_on": "eval:doc.is_branch_specific",
+   "fieldname": "applicable_branch",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Specify Branch Applicable",
+   "options": "Church Branch"
+  },
+  {
+   "description": "NOTE: IMPORTANT to create DISTINCTION.",
+   "fieldname": "group_ministry_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Group/Ministry Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose_mission",
+   "fieldtype": "Small Text",
+   "label": "Purpose/Mission"
+  },
+  {
+   "fieldname": "group_ministry_status",
+   "fieldtype": "Select",
+   "label": "Group/Ministry Status",
+   "options": "Active\nInactive\nPassive\nUnder Formation\nNOT APPLICABLE"
+  },
+  {
+   "default": "0",
+   "description": "NOTE: If TRUE, means that other Groups/Ministries CAN exist under it.",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group/Ministry a Parent Group?"
+  },
+  {
+   "depends_on": "eval:!doc.is_group",
+   "fieldname": "under_group_ministry",
+   "fieldtype": "Link",
+   "label": "Falls under which Group/Ministry?(IF APPLICABLE)",
+   "options": "Church Groups and Ministries"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_collection_acc",
+   "fieldtype": "Check",
+   "label": "Is Group/Ministry tied to a Collection Account?"
+  },
+  {
+   "depends_on": "eval: doc.has_collection_acc",
+   "fieldname": "collection_acc",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Specify Collection Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_wfwz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "groupministry_membership_section",
+   "fieldtype": "Section Break",
+   "label": "Group/Ministry Membership"
+  },
+  {
+   "bold": 1,
+   "description": "NOTE: This is a DYNAMIC count.",
+   "fieldname": "member_count",
+   "fieldtype": "Data",
+   "label": "Total Membership Count",
+   "read_only": 1
+  },
+  {
+   "description": "MEMBERSHIP is added from Individual Member Doc.",
+   "fieldname": "member_breakdown",
+   "fieldtype": "Table",
+   "options": "Group and Ministry Membership",
+   "read_only": 1
+  },
+  {
+   "fieldname": "master_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Master Details"
+  },
+  {
+   "fieldname": "membership_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Membership Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-13 11:07:28.014203",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Church Groups and Ministries",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

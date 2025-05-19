@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-13 21:39:29.223196",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "event_program",
+  "phone_number",
+  "email_address",
+  "column_break_afee",
+  "gender",
+  "additional_info",
+  "date",
+  "attending"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "What are your Full Names?",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "event_program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "What Event/Program do you wish to Attend?",
+   "options": "Church Events and Programs",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "What is your Phone Number?",
+   "reqd": 1
+  },
+  {
+   "description": "NOTE: Important for Informative Notices.",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Please Provide your Email Address"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "What Gender are you?",
+   "options": "Female\nMale\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Small Text",
+   "label": "Any Important Information you need to raise",
+   "placeholder": "EXAMPLE: Dietary Restrictions"
+  },
+  {
+   "fieldname": "column_break_afee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Confirm Date you will be Attending"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "NOTE: Will be USED in Event Attendance.",
+   "fieldname": "attending",
+   "fieldtype": "Check",
+   "label": "I will be Attending(TICK TRUE)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-13 21:53:43.784425",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Questionnaire for Events and Programs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

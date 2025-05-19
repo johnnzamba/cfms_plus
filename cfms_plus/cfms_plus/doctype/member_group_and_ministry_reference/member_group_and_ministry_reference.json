@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-12 13:22:38.550044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group_ministry",
+  "membership_started_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "group_ministry",
+   "fieldtype": "Link",
+   "label": "Group/Ministry",
+   "options": "Church Groups and Ministries"
+  },
+  {
+   "fieldname": "membership_started_on",
+   "fieldtype": "Datetime",
+   "label": "Became Member on?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-12 13:25:05.859083",
+ "modified_by": "Administrator",
+ "module": "Cfms Plus",
+ "name": "Member Group and Ministry Reference",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
